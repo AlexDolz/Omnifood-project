@@ -91,7 +91,6 @@ body {
 /************************/
 
 .container {
-  /* 1140px sometimes use this or 1200px= 120rem */
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
@@ -101,13 +100,7 @@ body {
   display: grid;
   row-gap: 9.6rem;
   column-gap: 6.4rem;
-
-  /* margin-bottom: 9.6rem; */
 }
-
-/* .grid:last-child {
-  margin-bottom: 0;
-} */
 
 .grid:not(:last-child) {
   margin-bottom: 9.6rem;
@@ -124,9 +117,6 @@ body {
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
-/* .grid--5-cols {
-  grid-template-columns: repeat(5, 1fr);
-} */
 
 .grid--center-v {
   align-items: center;
@@ -207,9 +197,6 @@ body {
 .btn--outline:active {
   background-color: #fdf2e9;
 
-  /* border: 3px solid #fff; */
-
-  /* Trick to add border inside */
   box-shadow: inset 0 0 0 3px #fff;
 }
 
@@ -264,8 +251,7 @@ body {
 
 *:focus {
   outline: none;
-  /* outline: 4px dotted #e67e22; */
-  /* outline-offset: 8px; */
+
   box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
